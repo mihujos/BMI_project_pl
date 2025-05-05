@@ -1,0 +1,16 @@
+print('BMI (body mass index) to wskaźnik masy ciała obliczany przez \npodzielenie masy ciała w kilogramach przez kwadrat wysokości w metrach.')
+x = float(input('podaj wagę w kilogramach :'))
+y = float(input('podaj wzrost w metrach :'))
+def bmi(kg,m):
+    a = kg/(m**2)
+    print(f'BMI = {a}')
+    if a>=30:
+        return 'otyłość'
+    elif a <= 18.49:
+        return 'niedowaga '
+    elif a>=25:
+        return 'nadwaga '
+    else :
+        return 'pożądana masa ciała'
+
+print (f'Twój wynik BMI to {bmi(x,y)}')
